@@ -5,23 +5,16 @@
       %thead
         %tr
           %th id
-          %th company_name
-          %th first_name
-          %th last_name
-          %th email
           %th phone
-          %th extention
-          %th fax
-          %th cell
+          %th email
+          %th web
           %th address
-          %th city
-          %th state
-          %th zipcode
-          %th facebook
-          %th linkedin
-          %th tweeter
-          %th website
+          %th name
+          %th company
+          %th job
+          %th text
           %th business_card
+          %th params
           %th created_at
           %th updated_at
           %th= link_to  'Add', new_client_path, class: 'btn btn-primary'
@@ -29,23 +22,16 @@
         - clients.each do |client|
           %tr
             %td= client.id
-            %td= client.company_name
-            %td= client.first_name
-            %td= client.last_name
-            %td= client.email
             %td= client.phone
-            %td= client.extention
-            %td= client.fax
-            %td= client.cell
+            %td= client.email
+            %td= client.web
             %td= client.address
-            %td= client.city
-            %td= client.state
-            %td= client.zipcode
-            %td= client.facebook
-            %td= client.linkedin
-            %td= client.tweeter
-            %td= client.website
-            %td= client.business_card.path.split("/").last unless client.business_card.to_s.empty?
+            %td= client.name
+            %td= client.company
+            %td= client.job
+            %td= client.text
+            %td= client.business_card
+            %td= client.params
             %td= client.created_at.strftime('%D %r')
             %td= client.updated_at.strftime('%D %r')
             %td= link_to 'Edit', edit_client_path(client), class: 'btn btn-info'

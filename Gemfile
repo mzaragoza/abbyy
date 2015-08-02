@@ -45,6 +45,7 @@ end
 
 gem 'abbyy'
 
+gem 'awesome_print'
 gem 'haml'
 gem 'simple_form'
 gem 'decent_exposure', :git => 'git://github.com/voxdolo/decent_exposure.git'

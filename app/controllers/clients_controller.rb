@@ -6,7 +6,8 @@ class ClientsController < ApplicationController
 
   def create
     if client.save
-      client.send_to_abbyy
+      client.abby unless client.business_card.to_s.empty?
+      client.process_params unless client.params.empty?
       flash[:notice] = t(:client_was_successfully_created)
       redirect_to clients_path
     else
@@ -16,7 +17,7 @@ class ClientsController < ApplicationController
 
   def update
     if client.save
-      client.send_to_abbyy
+      client.abby unless client.business_card.to_s.empty?
       flash[:notice] = t(:client_was_successfully_updated)
       redirect_to clients_path
     else
