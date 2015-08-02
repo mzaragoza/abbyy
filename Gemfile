@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-gem 'haml'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -44,3 +43,13 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'abbyy'
+
+gem 'haml'
+gem 'simple_form'
+gem 'decent_exposure', :git => 'git://github.com/voxdolo/decent_exposure.git'
+
+# Images
+gem 'carrierwave'
+gem 'rmagick', require: false
+gem 'fog'

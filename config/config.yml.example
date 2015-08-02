@@ -1,0 +1,10 @@
+#S3
+S3_KEY: 'xxxxxxxxxxxxxx'
+S3_SECRET: 'xxxxxxxxxx'
+S3_REGION: 'us-east-1'
+S3_ASSET_URL: 'xxxxxx.s3-website-us-east-1.amazonaws.com'
+S3_BUCKET_NAME: 'xxxxx'
+
+#abbyy
+ABBYY_APPLICATION_ID: 'xxxxxx'
+ABBYY_TOKEN: 'xxxxxx'
