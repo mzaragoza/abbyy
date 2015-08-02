@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class ClientsController < ApplicationController
   expose(:clients){ Client.all }
   expose(:client, attributes: :client_params)
